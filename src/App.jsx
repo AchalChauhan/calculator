@@ -13,7 +13,12 @@ const App = () => {
   const handleCalculate = () => {
     try {
       const result = eval(input);
-      setAns(result);
+      if(result === undefined){
+        setAns("Error");
+      }else{
+        setAns(result);
+      }
+      console.log(result)
       setDisplayOutput(true);
     } catch (error) {
       setInput("Error");
