@@ -1,0 +1,41 @@
+.calculator {
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+input[type='text'] {
+  width: 75%;
+  padding: 7px;
+  margin-bottom: 18px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+button {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.calculate-btn {
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.flex{
+  display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
